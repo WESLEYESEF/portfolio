@@ -2,7 +2,7 @@
 //  BUSCADOR DE FILMES — API TMDB
 //  Coloque sua chave gratuita abaixo (https://www.themoviedb.org)
 // ============================================================
-var API_KEY = "SUA_CHAVE_AQUI";
+var API_KEY = "de1bbc6d793caf03148e650a262c2abb";
 var BASE_URL = "https://api.themoviedb.org/3";
 var IMG_URL = "https://image.tmdb.org/t/p/w500";
 
