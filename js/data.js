@@ -5,7 +5,8 @@ const PORTFOLIO = {
   links: [
     { label: "GitHub", url: "https://github.com/WESLEYESEF", icon: "github" },
     { label: "LinkedIn", url: "https://linkedin.com/in/seu-usuario", icon: "linkedin" },
-    { label: "Email", url: "mailto:voce@email.com", icon: "email" }
+    { label: "Email", url: "mailto:w.lucasmnl@gmail.com", icon: "email" },
+    { label: "WhatsApp", url: "https://wa.me/5599996492423", icon: "whatsapp" }
   ],
   sobre: [
     "Sou apaixonado por tecnologia e por transformar ideias em produtos.",
