@@ -40,6 +40,38 @@ const PORTFOLIO = {
       cargaHoraria: "18 horas",
       ano: "2025",
       certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGaRhfKnKz4C1qXGk6H%252b%252bfsR"
+    },
+    {
+      icone: "🧩",
+      titulo: "Introdução à Programação Orientada a Objetos (POO)",
+      instituicao: "Fundação Bradesco (Escola Virtual)",
+      cargaHoraria: "5 horas",
+      ano: "2025",
+      certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGb7o51AaTGZu1ueD2d8Ya47"
+    },
+    {
+      icone: "🤖",
+      titulo: "AI-900 - Fundamentos de IA no Azure",
+      instituicao: "Fundação Bradesco (Escola Virtual)",
+      cargaHoraria: "16 horas",
+      ano: "2025",
+      certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGY08T%252fqyx90I19NJ2eeQgsB"
+    },
+    {
+      icone: "🗄️",
+      titulo: "Administrando Banco de Dados",
+      instituicao: "Fundação Bradesco (Escola Virtual)",
+      cargaHoraria: "15 horas",
+      ano: "2025",
+      certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGbkqqGf%252f4HBx%252fXnONNquIFP"
+    },
+    {
+      icone: "🖥️",
+      titulo: "Criando um Projeto com Interface Gráfica Utilizando a Linguagem Python",
+      instituicao: "Fundação Bradesco (Escola Virtual)",
+      cargaHoraria: "10 horas",
+      ano: "2025",
+      certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGbicM9Ey8aWLnkIUypXLY6s"
     }
   ],
   contatoLead: "Tem um projeto em mente? Vamos conversar."
