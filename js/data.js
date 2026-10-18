@@ -4,7 +4,7 @@ const PORTFOLIO = {
   descricao: "Crio aplicações web modernas, rápidas e acessíveis.",
   links: [
     { label: "GitHub", url: "https://github.com/WESLEYESEF", icon: "github" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/seu-usuario", icon: "linkedin" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/wesley-lucas-04399319a", icon: "linkedin" },
     { label: "Email", url: "mailto:w.lucasmnl@gmail.com", icon: "email" },
     { label: "WhatsApp", url: "https://wa.me/5599996492423", icon: "whatsapp" }
   ],
