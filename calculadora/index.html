@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Diária e Horas</title>
+  <style>
+    :root { --bg:#0d1117; --card:#1c2333; --border:#30363d; --text:#e6edf3; --muted:#8b949e; --accent:#2dd4bf; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:32px; width:100%; max-width:440px; }
+    h1 { font-size:1.5rem; margin-bottom:4px; }
+    .sub { color:var(--muted); font-size:.9rem; margin-bottom:24px; }
+    .field { margin-bottom:16px; }
+    .field label { display:block; font-size:.85rem; color:var(--muted); margin-bottom:6px; }
+    .field .row { display:flex; align-items:center; gap:10px; }
+    .field input { flex:1; background:#0d1117; border:1px solid var(--border); border-radius:10px; padding:12px 14px; color:var(--text); font-size:1.1rem; width:100%; }
+    .field input:focus { outline:none; border-color:var(--accent); }
+    .rate { font-family:monospace; color:var(--accent); font-size:.85rem; white-space:nowrap; }
+    .total { background:#0d1117; border:1px solid var(--border); border-radius:12px; padding:20px; margin-top:24px; text-align:center; }
+    .total .label { color:var(--muted); font-size:.85rem; }
+    .total .value { font-size:2.2rem; font-weight:800; color:var(--accent); margin-top:4px; }
+    .breakdown { margin-top:12px; font-size:.85rem; color:var(--muted); }
+    .breakdown span { color:var(--text); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>💰 Calculadora de Trabalho</h1>
+    <p class="sub">Diária R$150 · Hora extra R$15</p>
+
+    <div class="field">
+      <label>Dias trabalhados (diária)</label>
+      <div class="row">
+        <input type="number" id="dias" min="0" value="14" />
+        <span class="rate">× R$150</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Horas extras</label>
+      <div class="row">
+        <input type="number" id="horas" min="0" value="0" />
+        <span class="rate">× R$15</span>
+      </div>
+    </div>
+
+    <div class="total">
+      <div class="label">TOTAL A RECEBER</div>
+      <div class="value" id="total">R$ 0,00</div>
+      <div class="breakdown" id="breakdown"></div>
+    </div>
+  </div>
+
+  <script>
+    const DIARIA = 150, HORA = 15;
+    const diasEl = document.getElementById('dias');
+    const horasEl = document.getElementById('horas');
+    const totalEl = document.getElementById('total');
+    const breakdownEl = document.getElementById('breakdown');
+
+    function fmt(v) { return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); }
+
+    function calc() {
+      const dias = parseInt(diasEl.value) || 0;
+      const horas = parseInt(horasEl.value) || 0;
+      const subDiaria = dias * DIARIA;
+      const subHoras = horas * HORA;
+      const total = subDiaria + subHoras;
+      totalEl.textContent = fmt(total);
+      breakdownEl.innerHTML = '<span>' + fmt(subDiaria) + '</span> (diárias) + <span>' + fmt(subHoras) + '</span> (horas)';
+    }
+
+    diasEl.addEventListener('input', calc);
+    horasEl.addEventListener('input', calc);
+    calc();
+  </script>
+</body>
+</html>

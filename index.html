@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seu Nome — Portfólio</title>
+  <meta name="description" content="Portfólio profissional — projetos, habilidades e experiência." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" id="navLogo">seu.nome<span class="accent">.dev</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <p class="hero__hello">👋 Olá, eu sou</p>
+      <h1 class="hero__name" id="heroName">Seu Nome</h1>
+      <h2 class="hero__role" id="heroRole">Desenvolvedor Full-Stack</h2>
+      <p class="hero__desc" id="heroDesc">Crio aplicações web modernas, rápidas e acessíveis. Focado em resolver problemas reais com código limpo.</p>
+      <div class="hero__cta">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--ghost">Fale comigo</a>
+      </div>
+      <div class="hero__links" id="heroLinks"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section__title">Sobre mim</h2>
+      <div class="sobre" id="sobreText"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="habilidades">
+    <div class="container">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="skills" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="calculadora">
+    <div class="container">
+      <h2 class="section__title">Calculadora de Trabalho</h2>
+      <p class="contato__lead" style="color:var(--text-muted);margin-bottom:24px;">Diária <strong style="color:var(--accent)">R$150</strong> · Hora extra <strong style="color:var(--accent)">R$15</strong></p>
+      <div class="calc">
+        <div class="calc__field">
+          <label>Dias trabalhados (diária)</label>
+          <div class="calc__row">
+            <input type="number" id="calcDias" min="0" value="14" />
+            <span class="calc__rate">× R$150</span>
+          </div>
+        </div>
+        <div class="calc__field">
+          <label>Horas extras</label>
+          <div class="calc__row">
+            <input type="number" id="calcHoras" min="0" value="0" />
+            <span class="calc__rate">× R$15</span>
+          </div>
+        </div>
+        <div class="calc__total">
+          <div class="calc__label">TOTAL A RECEBER</div>
+          <div class="calc__value" id="calcTotal">R$ 0,00</div>
+          <div class="calc__breakdown" id="calcBreakdown"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section__title">Projetos</h2>
+      <div class="projects" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contato">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      <p class="contato__lead" id="contatoLead"></p>
+      <div class="contato__links" id="contatoLinks"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p id="footerText"></p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+</html>
