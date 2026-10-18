@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎬 Buscador de Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>🎬 Buscador de Filmes</h1>
+    <p>Pesquise por qualquer filme e veja detalhes, nota e sinopse.</p>
+  </header>
+
+  <main class="container">
+    <form class="busca" id="buscaForm">
+      <input type="text" id="campoBusca" placeholder="Digite o nome do filme..." autocomplete="off" />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="status" id="status"></div>
+    <div class="grid" id="resultados"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

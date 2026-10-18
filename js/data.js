@@ -22,6 +22,14 @@ const PORTFOLIO = {
       tags: ["JavaScript", "HTML", "CSS"],
       repo: "https://github.com/WESLEYESEF/portfolio",
       demo: "calculadora/index.html"
+    },
+    {
+      icone: "🎬",
+      titulo: "Buscador de Filmes",
+      descricao: "Aplicação que busca filmes pela API do TMDB, exibindo pôster, título, ano e nota de avaliação.",
+      tags: ["JavaScript", "HTML", "CSS", "API REST"],
+      repo: "https://github.com/WESLEYESEF/portfolio",
+      demo: "filmes/index.html"
     }
   ],
   formacao: [
