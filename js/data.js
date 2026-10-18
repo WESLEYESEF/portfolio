@@ -9,9 +9,10 @@ const PORTFOLIO = {
     { label: "WhatsApp", url: "https://wa.me/5599996492423", icon: "whatsapp" }
   ],
   sobre: [
-    "Sou apaixonado por tecnologia e por transformar ideias em produtos.",
-    "Formado em Análise e Desenvolvimento de Sistemas.",
-    "Gosto de escrever código limpo, testável e bem documentado."
+    "Desenvolvedor Full-Stack formado em Análise e Desenvolvimento de Sistemas, com foco em criar aplicações web completas — do banco de dados à interface.",
+    "Trabalho principalmente com JavaScript, Python e SQL, construindo projetos funcionais que resolvem problemas reais do dia a dia.",
+    "Tenho certificações em Python, Orientação a Objetos, Banco de Dados e Fundamentos de IA, e estou em constante evolução, sempre buscando aprender novas tecnologias e boas práticas.",
+    "Valorizo código limpo, testável e bem documentado, e busco oportunidades onde eu possa contribuir e crescer profissionalmente."
   ],
   habilidades: ["JavaScript", "TypeScript", "Python", "Node.js", "React", "HTML/CSS", "SQL", "Linux", "Git", "Docker"],
   projetos: [
