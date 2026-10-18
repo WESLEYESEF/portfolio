@@ -19,8 +19,8 @@ const PORTFOLIO = {
       titulo: "Calculadora de Diária e Horas",
       descricao: "Ferramenta que soma diárias (R$150) e horas extras (R$15) e mostra o total a receber em tempo real.",
       tags: ["JavaScript", "HTML", "CSS"],
-      repo: "https://github.com/WESLEYESEF/calculadora-diaria-horas",
-      demo: ""
+      repo: "https://github.com/WESLEYESEF/portfolio",
+      demo: "calculadora/index.html"
     }
   ],
   cursos: [
