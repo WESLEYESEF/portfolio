@@ -80,6 +80,54 @@
     projects.appendChild(card);
   });
 
+
+  // Cursos
+  var cursosGrid = document.getElementById('cursosGrid');
+  if (cursosGrid && d.cursos) {
+    d.cursos.forEach(function (c) {
+      var card = document.createElement('article');
+      card.className = 'curso';
+
+      var header = document.createElement('div');
+      header.className = 'curso__header';
+      var icon = document.createElement('span');
+      icon.className = 'curso__icon'; icon.textContent = c.icone || '📜';
+      var title = document.createElement('h3');
+      title.className = 'curso__title'; title.textContent = c.titulo;
+      header.appendChild(icon); header.appendChild(title);
+
+      var meta = document.createElement('div');
+      meta.className = 'curso__meta';
+      if (c.instituicao) {
+        var inst = document.createElement('span');
+        inst.textContent = c.instituicao;
+        meta.appendChild(inst);
+      }
+      if (c.cargaHoraria) {
+        var ch = document.createElement('span');
+        ch.className = 'curso__ch'; ch.textContent = c.cargaHoraria;
+        meta.appendChild(ch);
+      }
+      if (c.ano) {
+        var ano = document.createElement('span');
+        ano.className = 'curso__ano'; ano.textContent = c.ano;
+        meta.appendChild(ano);
+      }
+
+      card.appendChild(header); card.appendChild(meta);
+
+      if (c.certificado) {
+        var a = document.createElement('a');
+        a.className = 'curso__cert'; a.href = c.certificado; a.target = '_blank'; a.rel = 'noopener';
+        a.textContent = 'Ver certificado ↗';
+        card.appendChild(a);
+      }
+
+      cursosGrid.appendChild(card);
+    });
+  }
+
+  // Contato
   // Contato
   document.getElementById('contatoLead').textContent = d.contatoLead;
   const contatoLinks = document.getElementById('contatoLinks');

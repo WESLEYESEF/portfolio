@@ -23,5 +23,15 @@ const PORTFOLIO = {
       demo: ""
     }
   ],
+  cursos: [
+    {
+      icone: "🐍",
+      titulo: "Desenvolvimento Orientado a Objetos Utilizando a Linguagem Python",
+      instituicao: "Fundação Bradesco (Escola Virtual)",
+      cargaHoraria: "10 horas",
+      ano: "2025",
+      certificado: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=5184091&p=9Ng6IP5ecGa7kBnO%252bJU0dM1gO5mKxWOD"
+    }
+  ],
   contatoLead: "Tem um projeto em mente? Vamos conversar."
 };

@@ -140,3 +140,19 @@ body {
 .calc__value { font-size: 2.2rem; font-weight: 800; color: var(--accent); margin-top: 4px; }
 .calc__breakdown { margin-top: 12px; font-size: .85rem; color: var(--text-muted); }
 .calc__breakdown span { color: var(--text); }
+
+/* CURSOS */
+.cursos { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.curso {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; display: flex; flex-direction: column; gap: 12px; transition: all .25s;
+}
+.curso:hover { border-color: var(--accent-2); transform: translateY(-4px); }
+.curso__header { display: flex; align-items: flex-start; gap: 12px; }
+.curso__icon { font-size: 1.5rem; }
+.curso__title { font-size: 1.05rem; font-weight: 700; line-height: 1.4; }
+.curso__meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--text-muted); font-size: .85rem; }
+.curso__ch { font-family: 'JetBrains Mono', monospace; color: var(--code); background: rgba(88,166,255,.1); border: 1px solid rgba(88,166,255,.25); padding: 3px 9px; border-radius: 6px; font-size: .72rem; }
+.curso__ano { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); }
+.curso__cert { color: var(--accent); text-decoration: none; font-size: .88rem; font-weight: 600; }
+.curso__cert:hover { text-decoration: underline; }
