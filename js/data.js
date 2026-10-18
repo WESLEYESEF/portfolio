@@ -24,6 +24,16 @@ const PORTFOLIO = {
       demo: "calculadora/index.html"
     }
   ],
+  formacao: [
+    {
+      icone: "🎓",
+      titulo: "Análise e Desenvolvimento de Sistemas",
+      grau: "Tecnólogo",
+      instituicao: "Universidade Pitágoras Unopar Anhanguera",
+      periodo: "Conclusão: dez/2025 · Colação de grau: jan/2026",
+      diploma: "https://diplomas.cogna.com.br/diploma-digital/validador/documento/academico/"
+    }
+  ],
   cursos: [
     {
       icone: "🐍",

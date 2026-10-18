@@ -81,6 +81,46 @@
   });
 
 
+  // Formação Acadêmica
+  var formacaoGrid = document.getElementById('formacaoGrid');
+  if (formacaoGrid && d.formacao) {
+    d.formacao.forEach(function (f) {
+      var card = document.createElement('article');
+      card.className = 'formacao-item';
+
+      var header = document.createElement('div');
+      header.className = 'formacao__header';
+      var icon = document.createElement('span');
+      icon.className = 'formacao__icon'; icon.textContent = f.icone || '🎓';
+      var title = document.createElement('h3');
+      title.className = 'formacao__title'; title.textContent = f.titulo;
+      header.appendChild(icon); header.appendChild(title);
+
+      var grau = document.createElement('div');
+      grau.className = 'formacao__grau'; grau.textContent = f.grau || '';
+
+      var inst = document.createElement('div');
+      inst.className = 'formacao__inst'; inst.textContent = f.instituicao || '';
+
+      var periodo = document.createElement('div');
+      periodo.className = 'formacao__periodo'; periodo.textContent = f.periodo || '';
+
+      card.appendChild(header);
+      if (f.grau) card.appendChild(grau);
+      if (f.instituicao) card.appendChild(inst);
+      if (f.periodo) card.appendChild(periodo);
+
+      if (f.diploma) {
+        var a = document.createElement('a');
+        a.className = 'formacao__diploma'; a.href = f.diploma; a.target = '_blank'; a.rel = 'noopener';
+        a.textContent = 'Ver diploma digital ↗';
+        card.appendChild(a);
+      }
+
+      formacaoGrid.appendChild(card);
+    });
+  }
+
   // Cursos
   var cursosGrid = document.getElementById('cursosGrid');
   if (cursosGrid && d.cursos) {

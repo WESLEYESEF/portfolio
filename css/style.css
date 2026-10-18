@@ -156,3 +156,20 @@ body {
 .curso__ano { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); }
 .curso__cert { color: var(--accent); text-decoration: none; font-size: .88rem; font-weight: 600; }
 .curso__cert:hover { text-decoration: underline; }
+
+/* FORMAÇÃO ACADÊMICA */
+.formacao { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+.formacao-item {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; display: flex; flex-direction: column; gap: 10px; transition: all .25s;
+  border-left: 4px solid var(--accent);
+}
+.formacao-item:hover { border-color: var(--accent); transform: translateY(-4px); }
+.formacao__header { display: flex; align-items: flex-start; gap: 12px; }
+.formacao__icon { font-size: 1.6rem; }
+.formacao__title { font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
+.formacao__grau { display: inline-block; align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: .78rem; font-weight: 600; color: var(--accent); background: rgba(45,212,191,.12); border: 1px solid rgba(45,212,191,.3); padding: 3px 10px; border-radius: 6px; }
+.formacao__inst { color: var(--text); font-weight: 500; }
+.formacao__periodo { color: var(--text-muted); font-size: .85rem; }
+.formacao__diploma { color: var(--accent-2); text-decoration: none; font-size: .88rem; font-weight: 600; }
+.formacao__diploma:hover { text-decoration: underline; }
