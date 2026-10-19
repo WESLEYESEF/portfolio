@@ -14,7 +14,7 @@ const PORTFOLIO = {
     "Tenho certificações em Python, Orientação a Objetos, Banco de Dados e Fundamentos de IA, e estou em constante evolução, sempre buscando aprender novas tecnologias e boas práticas.",
     "Valorizo código limpo, testável e bem documentado, e busco oportunidades onde eu possa contribuir e crescer profissionalmente."
   ],
-  habilidades: ["JavaScript", "TypeScript", "Python", "Node.js", "React", "HTML/CSS", "SQL", "Linux", "Git", "Docker"],
+  habilidades: ["JavaScript", "TypeScript", "Python", "Node.js", "React", "HTML/CSS", "SQL", "Linux", "Git", "Docker", "Engenharia Reversa", "Análise de APK", "jadx", "APKTool", "ADB"],
   projetos: [
     {
       icone: "💰",
@@ -31,6 +31,14 @@ const PORTFOLIO = {
       tags: ["JavaScript", "HTML", "CSS", "API REST"],
       repo: "https://github.com/WESLEYESEF/portfolio",
       demo: "filmes/index.html"
+    },
+    {
+      icone: "🔍",
+      titulo: "Análise de Segurança de Aplicativo Android",
+      descricao: "Estudo de engenharia reversa: decompilação de APK e mapeamento do fluxo de verificação de assinatura, com foco educacional em segurança.",
+      tags: ["jadx", "Engenharia Reversa", "APKTool", "ADB", "KernelSU"],
+      repo: "https://github.com/WESLEYESEF/portfolio",
+      demo: ""
     }
   ],
   formacao: [
