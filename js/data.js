@@ -36,8 +36,8 @@ const PORTFOLIO = {
       icone: "🔍",
       titulo: "Análise de Segurança de Aplicativo Android",
       descricao: "Estudo de engenharia reversa: decompilação de APK e mapeamento do fluxo de verificação de assinatura, com foco educacional em segurança.",
-      tags: ["jadx", "Engenharia Reversa", "APKTool", "ADB", "KernelSU"],
-      repo: "https://github.com/WESLEYESEF/portfolio",
+      tags: ["jadx", "Engenharia Reversa", "ADB", "Análise Estática"],
+      repo: "https://github.com/WESLEYESEF/portfolio/tree/master/analise-seguranca",
       demo: ""
     }
   ],
